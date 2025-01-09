@@ -1,0 +1,78 @@
+Error fetching data: Error: Pool is closed.
+    at /home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/pool.js:39:40
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+Error fetching data: Error: Pool is closed.
+    at /home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/pool.js:39:40
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+Error fetching data: Error: Pool is closed.
+    at /home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/pool.js:57:21
+    at PoolConnection.<anonymous> (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/connection.js:777:13)
+    at Object.onceWrapper (events.js:520:26)
+    at PoolConnection.emit (events.js:400:28)
+    at ClientHandshake.<anonymous> (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/connection.js:121:14)
+    at ClientHandshake.emit (events.js:400:28)
+    at ClientHandshake.execute (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/commands/command.js:49:10)
+    at PoolConnection.handlePacket (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/connection.js:456:32)
+    at PacketParser.onPacket (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/connection.js:85:12)
+    at PacketParser.executeStart (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/mysql2/lib/packet_parser.js:75:16)
+/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:31
+		if (!Object.hasOwn(rawDirectives, rawDirectiveName)) {
+		            ^
+
+TypeError: Object.hasOwn is not a function
+    at normalizeDirectives (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:31:15)
+    at contentSecurityPolicy (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:113:31)
+    at getMiddlewareFunctionsFromOptions (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:316:16)
+    at helmet (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:514:31)
+    at Object.<anonymous> (/home/ihawzhzm/public_html/backend/server.js:22:9)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:31
+		if (!Object.hasOwn(rawDirectives, rawDirectiveName)) {
+		            ^
+
+TypeError: Object.hasOwn is not a function
+    at normalizeDirectives (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:31:15)
+    at contentSecurityPolicy (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:113:31)
+    at getMiddlewareFunctionsFromOptions (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:316:16)
+    at helmet (/home/ihawzhzm/nodevenv/public_html/backend/14/lib/node_modules/helmet/index.cjs:514:31)
+    at Object.<anonymous> (/home/ihawzhzm/public_html/backend/server.js:22:9)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ihawzhzm/public_html/backend/landing-page/index.html'
