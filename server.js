@@ -4,6 +4,8 @@ const cors = require('cors');
 const mysql = require('mysql2');
 const compression = require('compression');
 
+const router = express.Router();
+
 import dbConfig from "./db/db";
 
 const pool = mysql.createPool(dbConfig);
