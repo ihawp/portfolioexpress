@@ -5,18 +5,25 @@ import mysql from 'mysql2';
 import compression from 'compression';
 import helmet from 'helmet';
 
-// routes
-import bcit from "./app/routes/bcit.mjs";
+// https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/#heading-architecture
 
-import dbConfig from "./app/database/db.mjs";
+// routes
+import bcit from "./app/bcit/routes.js";
+
+import dbConfig from "./app/db.js";
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+app.use('/bcit', bcit);
+app.get('*', (req, res) => {
+    res.send('This page does not exist.');
+})
+
+/*
 app.use(compression());
 app.use(helmet());
 
-/*
 app.use(compression());
 
 const pool = mysql.createPool(dbConfig);
@@ -33,9 +40,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-*/
-app.use('/bcit', bcit);
-/*
 app.get('/projects', (req, res) => {
     const query = 'SELECT * FROM accounts ORDER BY id DESC';
 
@@ -57,11 +61,11 @@ app.get('/fathers-day', (req, res) => {
 });
 
 // set up router for BCIT
-app.get('/bcit', (req, res) => {
-    app.use('/bcit/landing-page', express.static('index.html'));
+app.get('/routes', (req, res) => {
+    app.use('/routes/landing-page', express.static('index.html'));
 });
-app.use('/bcit/landing-page', express.static('../bcit/landing-page'));
-app.use('/bcit/web-dev-1/a1', express.static('../bcit/wd1-a1'));
+app.use('/routes/landing-page', express.static('../routes/landing-page'));
+app.use('/routes/web-dev-1/a1', express.static('../routes/wd1-a1'));
 
 
 app.get('*', (req, res) => {
