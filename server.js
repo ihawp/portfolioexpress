@@ -5,6 +5,7 @@ import path from 'path';
 
 import bcit from "./app/bcit/routes.js";
 import gracie from "./app/gracie/routes.js";
+import fathersDayRouter from "./app/fathers-day/routes.js"
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
@@ -22,6 +23,7 @@ app.locals.dirname = __dirname;
 
 app.use(compression());
 app.use(helmet());
+app.use('/fathers-day', fathersDayRouter);
 app.use('/gracie', gracie);
 app.use('/bcit', bcit);
 

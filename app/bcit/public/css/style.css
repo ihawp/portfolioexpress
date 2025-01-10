@@ -1,0 +1,19 @@
+body {
+    background-color: #222;
+    font-family: sans-serif;
+}
+header {
+
+}
+nav {
+
+}
+nav a, body {
+    color: white;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
