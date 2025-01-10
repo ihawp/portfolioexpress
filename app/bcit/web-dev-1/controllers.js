@@ -1,24 +1,28 @@
-export const sendA1 = (req, res) => {
-    res.send('wow');
+import path from 'path';
+const url = './app/bcit/web-dev-1/public/';
+
+export const A1 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a1/index.html'), { root: req.app.locals.dirname })
 }
-export const sendA2 = (req, res) => {
-    res.send('this is a2');
+
+export const A2 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a2/index.html'), { root: req.app.locals.dirname })
 }
-export const sendA3 = (req, res) => {
-    res.send('this is a3');
+export const A3 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a3'), { root: req.app.locals.dirname })
 }
-export const sendA4 = (req, res) => {
-    res.send('this is a4');
+export const A4 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a4'), { root: req.app.locals.dirname })
 }
-export const sendA5 = (req, res) => {
-    res.send('this is a5');
+export const A5 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a5'), { root: req.app.locals.dirname })
 }
-export const sendA6 = (req, res) => {
-    res.send('this is a6');
+export const A6 = (req, res) => {
+    res.sendFile(path.join(url + 'wd1-a6'), { root: req.app.locals.dirname })
 }
-export const sendLanding = (req, res) => {
-    res.send('this is landing');
+export const Landing = (req, res) => {
+    res.sendFile(path.join(url + 'landing-page'), { root: req.app.locals.dirname })
 }
-export const sendCountry = (req, res) => {
-    res.send('this is country');
+export const Country = (req, res) => {
+    res.sendFile(path.join(url + 'country-page'), { root: req.app.locals.dirname })
 }

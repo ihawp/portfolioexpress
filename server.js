@@ -1,11 +1,10 @@
 import express from 'express';
-import path from 'path';
-import cors from 'cors';
-import mysql from 'mysql2';
 import compression from 'compression';
 import helmet from 'helmet';
+import path from 'path';
 
 import bcit from "./app/bcit/routes.js";
+import gracie from "./app/gracie/routes.js";
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
@@ -15,7 +14,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 export const __dirname = dirname(__filename);
 import dbConfig from "./app/db.js";
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -23,13 +22,13 @@ app.locals.dirname = __dirname;
 
 app.use(compression());
 app.use(helmet());
+app.use('/gracie', gracie);
 app.use('/bcit', bcit);
 
-app.get('/', (req, res) => {
-    res.send('aksdjasdsa');
-});
-app.get('*', (req, res) => {
-    res.send('This page does not exist.');
+
+app.use(['/', '*'], express.static('./app/ihawp/public'));
+app.get(['/', '*'], (req, res) => {
+    res.sendFile('./app/ihawp/public/index.html', { root: req.app.locals.dirname })
 });
 
 /*
