@@ -1,9 +1,8 @@
 import express from "express";
 import { sendA1, sendA2, sendA3, sendA4, sendA5, sendA6, sendLanding, sendCountry } from './controllers.js';
-import { __dirname } from '../../../location.js';
 const webDev1Router = express.Router({mergeParams: true});
 webDev1Router.get('/', (req, res) => {
-    res.sendFile('app/bcit/web-dev-1/index.html', { root: __dirname })
+    res.sendFile('./app/web-dev-1/public/index.html', { root: req.app.locals.dirname })
 })
 webDev1Router.use('/a1', sendA1);
 webDev1Router.use('/a2', sendA2);

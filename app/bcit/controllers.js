@@ -1,4 +1,3 @@
-import { __dirname } from '../../location.js';
 // import service from './services.js';
 // export const getThing = (req, res) => {
 //    const workout = service();
@@ -6,11 +5,11 @@ import { __dirname } from '../../location.js';
 // }
 
 export const sendHome = (req, res) => {
-    res.sendFile('app/bcit/index.html', { root: __dirname })
+    res.sendFile('app/bcit/public/index.html', { root: req.app.locals.dirname })
 }
 
 export const sendB = (req, res) => {
-    res.sendFile('app/bcit/error.html', { root: __dirname })
+    res.sendFile('app/bcit/public/error.html', { root: req.app.locals.dirname })
 }
 
 

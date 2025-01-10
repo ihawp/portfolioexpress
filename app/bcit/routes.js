@@ -1,10 +1,10 @@
-import express from 'express'
-import time from './middleware.js'
+import express from 'express';
+import time from './middleware.js';
+import webDev1Router from '../web-dev-1/routes.js';
 import { sendHome, sendB } from "./controllers.js";
-import webDev1Router from './web-dev-1/routes.js';
-const bcit = express.Router();
-bcit.use(time)
+const bcit = express.Router({mergeParams: true});
+bcit.use(time);
 bcit.use('/web-dev-1', webDev1Router);
-bcit.get('/', sendHome);
-bcit.get('*', sendB);
+bcit.use('/', sendHome);
+
 export default bcit;

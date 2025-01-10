@@ -7,21 +7,30 @@ import helmet from 'helmet';
 
 import bcit from "./app/bcit/routes.js";
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// https://stackoverflow.com/questions/8817423/why-is-dirname-not-defined-in-node-repl
+// https://stackoverflow.com/questions/9765215/global-variable-in-app-js-accessible-in-routes
+const __filename = fileURLToPath(import.meta.url);
+export const __dirname = dirname(__filename);
 import dbConfig from "./app/db.js";
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+
+app.locals.dirname = __dirname;
 
 app.use(compression());
 app.use(helmet());
 app.use('/bcit', bcit);
 
 app.get('/', (req, res) => {
-    res.send('aksdjasdsa')
+    res.send('aksdjasdsa');
 });
 app.get('*', (req, res) => {
     res.send('This page does not exist.');
-})
+});
 
 /*
 
